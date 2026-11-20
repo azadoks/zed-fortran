@@ -52,8 +52,6 @@
  (type_name)
 ] @type
 
-(intrinsic_type) @type.builtin
-
 (base_type_specifier
   (identifier) @type)
 
