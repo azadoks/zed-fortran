@@ -1,19 +1,18 @@
 id = "fortran"
 name = "Fortran"
-description = "Fortran support for Zed"
-version = "0.0.3"
+description = "Fortran support for Zed, using the upstream tree-sitter-fortran grammar"
+version = "0.1.0"
 schema_version = 1
 authors = [
     "Xavier Maruff <xavier.maruff@outlook.com>",
     "John Makowski <brickcodes@proton.me>",
 ]
-repository = "https://github.com/Xavier-Maruff/zed-fortran"
+repository = "https://github.com/azadoks/zed-fortran"
 
 [language_servers.fortls]
 name = "fortls"
-language = "Fortran"
+languages = ["Fortran"]
 
 [grammars.fortran]
-repository = "https://github.com/Xavier-Maruff/tree-sitter-fortran-wasm"
-commit = "87f43efa6d40c00d8ceb9831082348fa82f84ac3"
-#commit = "1105385cbcfc7cef1a7bb2d22d61c41678bd1409"
+repository = "https://github.com/stadelmanma/tree-sitter-fortran"
+rev = "d05165a6f0bd044ba1f89865927a752dd5168e66"
